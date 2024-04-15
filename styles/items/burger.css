@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+}
+
+.burger {
+  cursor: pointer;
+  position: fixed;
+  top: 45%;
+  right: -20px;
+  font-size: 70px;
+  padding: 30px;
+  z-index: 12;
+  rotate: 90deg;
+  background-color: aquamarine;
+}
+.burger .bar {
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 10px;
+  transition: all 1s ease-in-out;
+  background-color: black;
+}
+
+input {
+  opacity: 0%;
+}
+
+#burger-toggle {
+  opacity: 0;
+}
+
+#burger-toggle:checked {
+  opacity: 0;
+}
+#burger-toggle:checked .bar {
+  color: pink;
+}
+
+#burger-toggle:checked + .burger + .menu {
+  right: 0;
+}
+#burger-toggle:checked + .burger + .menu .second-text {
+  z-index: -1;
+}
+
+@media screen and (max-width: 1150px) {
+  .burger {
+    padding: 10px;
+    top: 5%;
+  }
+}/*# sourceMappingURL=burger.css.map */
