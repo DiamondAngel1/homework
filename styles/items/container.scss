@@ -354,7 +354,7 @@ input[type="checkbox"]:checked::before {
         position: fixed;
         margin-left: 7%;
         font-family: "Madimi One", sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
         z-index: -2;
         & .text-day{
@@ -369,7 +369,7 @@ input[type="checkbox"]:checked::before {
         & .second-fixed-text{
             display: flex;
             justify-content: center;
-            width:60%;
+            width:70%;
             margin-top: 250px;
             font-family: monospace;
             font-size: x-large;
@@ -447,7 +447,7 @@ input[type="checkbox"]:checked::before {
     }
     .second-main-container{
         background-color: #0b4350;
-        width: 100%;
+        width: auto;
         height:auto;
         z-index: 3;
         & .card-container {
@@ -461,11 +461,16 @@ input[type="checkbox"]:checked::before {
         }
         & .card{
             background-color: #0b4350;
+            display: flex;
+            justify-content: center;
             min-width: 410px;
             font-family: 'Madimi One';
-            height:250px;
+            height:300px;
             z-index: 3;
             margin:30px;
+        }
+        & .card-inner {
+            width: 90%;
         }
         & .card-front {
             & .card-number{
